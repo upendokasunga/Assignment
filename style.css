@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding:0% ;
+    box-sizing:border-box ;
+}
+.navbar{
+    display:flex;
+    justify-self: space-between;
+    align-items: center;
+    background-color:black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.navlinks{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navlinks li a :hover{
+    color: aqua;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    margin: right 10px; ;
+}
