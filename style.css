@@ -1,27 +1,86 @@
-*{
-    margin: 0%;
-    padding:0% ;
-    box-sizing:border-box ;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-.navbar{
-    display:flex;
-    justify-self: space-between;
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color:black;
-    padding: 10px 20px;
-    cursor: pointer;
+    background-color: #222;
+    padding: 15px 40px;
 }
-.navlinks{
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navlinks {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-.navlinks li a :hover{
-    color: aqua;
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
-.logo{
-    width: 30px;
-    height: 30px;
-    border-radius: 40px;
-    margin: right 10px; ;
+
+.navlinks a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+.section {
+    padding: 60px 40px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Section 1: Image left, text right */
+.horizontal {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.horizontal img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.text-content {
+    width: 60%;
+}
+
+/* Section 2: Image top, text bottom */
+.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vertical img {
+    width: 60%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
